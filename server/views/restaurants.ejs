@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - San Francisco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+
+    <main class="restaurant-list" id="restaurant-container"> 
+        <% restaurantData.forEach((restaurant, index) => { %>
+            <div class="restaurant" id="restaurant-<%= restaurant.id %>">
+                <img src="<%= restaurant.photo %>" alt="<%= restaurant.name %>">
+                <h2>
+                    <a href="#" class="restaurant-link" data-id="<%= restaurant.id %>"><%= restaurant.name %></a>
+                </h2>
+                <p><%= restaurant.adress %></p>
+                <p><%= restaurant.phone %></p>
+                <button class="delete-btn" data-id="<%= restaurant.id %>">Delete</button>
+            </div>
+        <% }); %>
+    </main>
+
+    <footer></footer>
+
+    <script src="/scripts/header.js"></script>
+    <script src="/scripts/restaurantCards.js"></script>
+</body>
+</html>

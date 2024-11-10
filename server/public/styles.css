@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.location{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.location-img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+}
+.location-name{
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    color: white;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-image {
+    width: 40%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.attraction {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.attraction img {
+    width: 350px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.attraction-info {
+    text-align: left;
+}
+
+.restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.restaurant {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.restaurant img {
+    width: 150px;
+    height: 150px;
+}
+.header{
+    width: 100%;
+    display: flex;
+    background-color: rgb(12, 12, 112);
+    height: 50px;
+}
+.header-item{
+    margin: 0;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+.header-item a{
+    margin: 0;
+    font-size: 25px;
+    font-family: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.main-form {
+    width: 100%;
+    text-align: center;
+}
+
+.main-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px; 
+}
+
+.main-form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    align-items: center;
+}
+
+.main-form input {
+    width: 100%; 
+    max-width: 500px; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.main-form label {
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 5px;
+}
+
+.main-form button{
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    background-color: #007bff;
+    margin: 20px;
+}

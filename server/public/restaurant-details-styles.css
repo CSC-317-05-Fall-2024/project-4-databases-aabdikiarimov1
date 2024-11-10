@@ -1,0 +1,10 @@
+.restaurant-details {
+    margin: 30px 50px 30px 30px;
+    display: flex;
+}
+
+.restaurant-image{
+    width: 350px;
+    height: 350px;
+    margin-right: 50px;
+}
